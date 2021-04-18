@@ -1,2 +1,2 @@
 # SoftUni-Homework
-My first steps in codding
+My first steps in coding
