@@ -1,0 +1,30 @@
+.exe
+--write.exe - 11.00kb
+--winhlp32.exe - 11.50kb
+--hh.exe - 18.00kb
+--bfsvc.exe - 76.00kb
+--splwow64.exe - 133.00kb
+--KMService.exe - 160.00kb
+--notepad.exe - 197.50kb
+--regedit.exe - 361.50kb
+--KJ.exe - 396.37kb
+--HelpPane.exe - 1051.50kb
+--explorer.exe - 4713.05kb
+.ini
+--win.ini - 0.16kb
+--system.ini - 0.21kb
+.log
+--WindowsUpdate.log - 0.27kb
+--PFRO.log - 711.38kb
+.bin
+--mib.bin - 42.12kb
+.dat
+--bootstat.dat - 66.00kb
+.dll
+--twain_32.dll - 63.50kb
+.manifest
+--WindowsShell.Manifest - 0.65kb
+.prx
+--WMSysPr9.prx - 309.22kb
+.xml
+--Professional.xml - 30.11kb
