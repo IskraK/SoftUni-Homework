@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CustomDoublyLinkedList</name>
+    </assembly>
+    <members>
+        <member name="T:CustomDoublyLinkedList.CustomLinkedList">
+            <summary>
+            Двойно свързан списък
+            </summary>
+        </member>
+        <member name="P:CustomDoublyLinkedList.CustomLinkedList.Count">
+            <summary>
+            Брой елементи в списъка
+            </summary>
+        </member>
+        <member name="P:CustomDoublyLinkedList.CustomLinkedList.Head">
+            <summary>
+            Първи елемент
+            </summary>
+        </member>
+        <member name="P:CustomDoublyLinkedList.CustomLinkedList.Tail">
+            <summary>
+            Последен елемент
+            </summary>
+        </member>
+        <member name="M:CustomDoublyLinkedList.CustomLinkedList.#ctor">
+            <summary>
+            Създава празен двойно свързан списък
+            </summary>
+        </member>
+        <member name="M:CustomDoublyLinkedList.CustomLinkedList.#ctor(System.Int32)">
+            <summary>
+            Създава списък с един елемент
+            </summary>
+            <param name="value">Стойност на елемента</param>
+        </member>
+        <member name="M:CustomDoublyLinkedList.CustomLinkedList.#ctor(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Създава списък от колекция от елемени
+            </summary>
+            <param name="list">Елементи, които да бъдат добавени в списъка</param>
+        </member>
+        <member name="M:CustomDoublyLinkedList.CustomLinkedList.AddFirst(System.Int32)">
+            <summary>
+            Добавя елемент в началото
+            </summary>
+            <param name="element">Елемент за добавяне</param>
+        </member>
+        <member name="M:CustomDoublyLinkedList.CustomLinkedList.AddLast(System.Int32)">
+            <summary>
+            Добавя елемент в края на списъка
+            </summary>
+            <param name="element">Елемент за добавяне</param>
+        </member>
+        <member name="M:CustomDoublyLinkedList.CustomLinkedList.RemoveFirst">
+            <summary>
+            Премахва елемент в началото
+            </summary>
+            <returns>Стойност на премахнатия елемент</returns>
+        </member>
+        <member name="M:CustomDoublyLinkedList.CustomLinkedList.RemoveLast">
+            <summary>
+            Премахва елемент в края
+            </summary>
+            <returns>Стойност на премахнатия елемент</returns>
+        </member>
+        <member name="M:CustomDoublyLinkedList.CustomLinkedList.Foreach(System.Action{System.Int32})">
+            <summary>
+            Извършва действие върху всеки елемент на колекцията
+            </summary>
+            <param name="action">Действие, което да се изпълни</param>
+        </member>
+        <member name="M:CustomDoublyLinkedList.CustomLinkedList.ToArray">
+            <summary>
+            Превръща списъка в масив
+            </summary>
+            <returns>Масив от елементите на списъка</returns>
+        </member>
+        <member name="T:CustomDoublyLinkedList.Node">
+            <summary>
+            Елемент от двойно свързан списък
+            </summary>
+        </member>
+        <member name="P:CustomDoublyLinkedList.Node.Value">
+            <summary>
+            Стойност на елемента
+            </summary>
+        </member>
+        <member name="P:CustomDoublyLinkedList.Node.Previous">
+            <summary>
+            Предишен елемент
+            </summary>
+        </member>
+        <member name="P:CustomDoublyLinkedList.Node.Next">
+            <summary>
+            Следващ елемент
+            </summary>
+        </member>
+    </members>
+</doc>
