@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01.LootBox", "01.LootBox\01.LootBox.csproj", "{CDDAC92D-E29A-47E4-97D6-E0BA10BFFE55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.ReVolt", "02.ReVolt\02.ReVolt.csproj", "{7C128010-AAC3-42DC-8469-6F1F148728D7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guild", "03. Guild_Skeleton\Guild\Guild.csproj", "{159BA2D3-F1F8-4867-A448-F145708F8F63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.ReVolt2var", "02.ReVolt2var\02.ReVolt2var.csproj", "{DA8FC167-850D-47C1-9FDD-7C1CDA8311C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02.ReVolt3var", "02.ReVolt3var\02.ReVolt3var.csproj", "{E53D20F6-E125-4058-A663-FC5F5ED2905E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.ReVolt4var", "02.ReVolt4var\02.ReVolt4var.csproj", "{0131DF9F-34F9-4ED1-8CE6-DE5054337A3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDDAC92D-E29A-47E4-97D6-E0BA10BFFE55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDDAC92D-E29A-47E4-97D6-E0BA10BFFE55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDDAC92D-E29A-47E4-97D6-E0BA10BFFE55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDDAC92D-E29A-47E4-97D6-E0BA10BFFE55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C128010-AAC3-42DC-8469-6F1F148728D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C128010-AAC3-42DC-8469-6F1F148728D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C128010-AAC3-42DC-8469-6F1F148728D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C128010-AAC3-42DC-8469-6F1F148728D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{159BA2D3-F1F8-4867-A448-F145708F8F63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159BA2D3-F1F8-4867-A448-F145708F8F63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159BA2D3-F1F8-4867-A448-F145708F8F63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{159BA2D3-F1F8-4867-A448-F145708F8F63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8FC167-850D-47C1-9FDD-7C1CDA8311C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8FC167-850D-47C1-9FDD-7C1CDA8311C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8FC167-850D-47C1-9FDD-7C1CDA8311C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8FC167-850D-47C1-9FDD-7C1CDA8311C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53D20F6-E125-4058-A663-FC5F5ED2905E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53D20F6-E125-4058-A663-FC5F5ED2905E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53D20F6-E125-4058-A663-FC5F5ED2905E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53D20F6-E125-4058-A663-FC5F5ED2905E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0131DF9F-34F9-4ED1-8CE6-DE5054337A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0131DF9F-34F9-4ED1-8CE6-DE5054337A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0131DF9F-34F9-4ED1-8CE6-DE5054337A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0131DF9F-34F9-4ED1-8CE6-DE5054337A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6FAE4D44-2435-4EA6-AAF0-DEE38C0809EC}
+	EndGlobalSection
+EndGlobal
