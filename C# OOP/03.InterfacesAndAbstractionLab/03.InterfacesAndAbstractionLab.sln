@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{61AD1506-70BC-411F-8A08-2F41590F04B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars", "Cars\Cars.csproj", "{28576BDD-199B-40BF-904B-3383DAE96B3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cars2var", "Cars2var\Cars2var.csproj", "{BC928C3A-D3F4-46BA-88DF-408EE8AFDAE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61AD1506-70BC-411F-8A08-2F41590F04B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61AD1506-70BC-411F-8A08-2F41590F04B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61AD1506-70BC-411F-8A08-2F41590F04B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61AD1506-70BC-411F-8A08-2F41590F04B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28576BDD-199B-40BF-904B-3383DAE96B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28576BDD-199B-40BF-904B-3383DAE96B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28576BDD-199B-40BF-904B-3383DAE96B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28576BDD-199B-40BF-904B-3383DAE96B3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC928C3A-D3F4-46BA-88DF-408EE8AFDAE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC928C3A-D3F4-46BA-88DF-408EE8AFDAE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC928C3A-D3F4-46BA-88DF-408EE8AFDAE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC928C3A-D3F4-46BA-88DF-408EE8AFDAE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B1F6154-6665-47A2-81A9-B74778843BDA}
+	EndGlobalSection
+EndGlobal
