@@ -11,16 +11,14 @@ namespace WarCroft.Entities.Characters.Contracts
         // TODO: Implement the rest of the class.
 
         private string name;
-        private double health;
-        private double armor;
 
-        protected Character(string name, double health, double armor, double abilityPoints, Bag bag)
+        protected Character(string name, double baseHealth, double baseArmor, double abilityPoints, Bag bag)
         {
             Name = name;
-            BaseHealth = health;
-            Health = health;
-            BaseArmor = armor;
-            Armor = armor;
+            BaseHealth = baseHealth;
+            Health = BaseHealth;
+            BaseArmor = baseArmor;
+            Armor = BaseArmor;
             AbilityPoints = abilityPoints;
             this.Bag = bag;
         }
@@ -40,47 +38,11 @@ namespace WarCroft.Entities.Characters.Contracts
 
         public double BaseHealth { get; }
 
-        public double Health
-        {
-            get => this.health; 
-            set
-            {
-                if (value < 0)
-                {
-                    this.health = 0;
-                }
-                else if (value > this.BaseHealth)
-                {
-                    this.health = BaseHealth;
-                }
-                else
-                {
-                health = value;
-                }
-            }
-        }
+        public double Health { get; set; }
 
         public double BaseArmor  { get; }
 
-        public double Armor 
-        {
-            get => this.armor;
-            set
-            {
-                if (value < 0)
-                {
-                    this.armor = 0;
-                }
-                //else if (value > this.BaseArmor)
-                //{
-                //    this.armor = BaseArmor;
-                //}
-                else
-                {
-                    armor = value;
-                }
-            }
-        }
+        public double Armor { get; private set; }
 
         public double AbilityPoints { get; }
 
@@ -92,14 +54,15 @@ namespace WarCroft.Entities.Characters.Contracts
         {
             this.EnsureAlive();
             this.Armor -= hitPoints;
-            double pointsForReduce = hitPoints - Armor;
 
-            if (pointsForReduce > 0)
+            if (this.Armor < 0)
             {
-                Health -= pointsForReduce;
+                this.Health += this.Armor;
+                this.Armor = 0;
 
-                if (this.Health == 0)
+                if (this.Health <= 0)
                 {
+                    this.Health = 0;
                     this.IsAlive = false;
                 }
             }

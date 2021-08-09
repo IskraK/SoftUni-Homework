@@ -24,6 +24,11 @@ namespace WarCroft.Entities.Characters
             }
 
             character.Health += this.AbilityPoints;
+
+            if (character.Health > character.BaseHealth)
+            {
+                character.Health = character.BaseHealth;
+            }
         }
     }
 }
