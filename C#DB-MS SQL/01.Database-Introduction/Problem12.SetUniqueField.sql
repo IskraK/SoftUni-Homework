@@ -1,0 +1,8 @@
+ALTER TABLE Users
+DROP CONSTRAINT PK_UsersCompositeIdUsername
+
+ALTER TABLE Users
+ADD CONSTRAINT PK_UsersId PRIMARY KEY (Id)
+
+ALTER TABLE Users
+ADD CONSTRAINT CH_UsernameLengthIsAtLeast3Symbols CHECK (LEN([Password]) >= 3)
