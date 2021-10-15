@@ -1,0 +1,11 @@
+--Find the top 10 cities, which have the most registered accounts in them. 
+--Order them by the count of accounts (descending).
+
+SELECT TOP(10) c.Id,
+	   c.[Name] AS City,
+	   c.CountryCode AS Country,
+	   COUNT(a.Id) AS Accounts
+FROM Cities AS c
+JOIN Accounts AS a ON c.Id=a.CityId
+GROUP BY c.Id,c.[Name],c.CountryCode
+ORDER BY Accounts DESC
