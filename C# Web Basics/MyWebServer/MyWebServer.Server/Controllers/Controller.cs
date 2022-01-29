@@ -21,7 +21,7 @@ namespace MyWebServer.Server.Controllers
         protected Response Html(string text) => new HtmlResponse(text);
         protected Response Html(string html, CookieCollection cookies)
         {
-            var response=new HtmlResponse(html);
+            var response = new HtmlResponse(html);
 
             if (cookies != null)
             {
