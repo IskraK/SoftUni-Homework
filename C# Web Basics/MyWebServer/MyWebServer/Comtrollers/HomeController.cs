@@ -24,32 +24,6 @@ namespace MyWebServer.Demo.Comtrollers
             <input type='submit' value ='Download Sites Content' /> 
         </form>";
 
-        //private static async Task DownloadSitesAsTextFile(string fileName, string[] urls)
-        //{
-        //    var downloads = new List<Task<string>>();
-
-        //    foreach (var url in urls)
-        //    {
-        //        downloads.Add(DownloadWebSiteContent(url));
-        //    }
-
-        //    var responses = await Task.WhenAll(downloads);
-        //    var responsesString = string.Join(Environment.NewLine + new String('-', 100), responses);
-        //    await System.IO.File.WriteAllTextAsync(fileName, responsesString);
-        //}
-
-        //private static async Task<string> DownloadWebSiteContent(string url)
-        //{
-        //    var httpClient = new HttpClient();
-        //    using (httpClient)
-        //    {
-        //        var response = await httpClient.GetAsync(url);
-        //        var html = await response.Content.ReadAsStringAsync();
-
-        //        return html.Substring(0, 2000);
-        //    }
-        //}
-
         public HomeController(Request request)
         : base(request)
         {
@@ -76,15 +50,6 @@ namespace MyWebServer.Demo.Comtrollers
         }
 
         public Response Content() => Html(DownloadForm);
-
-        //public Response DowmloadContent()
-        //{
-        //    DownloadSitesAsTextFile(HomeController.FileName,
-        //        new string[] { "https://judge.softuni.org/", "https://softuni.org/" })
-        //        .Wait();
-
-        //    return File(HomeController.FileName);
-        //}
 
         public Response DownloadContent() => File(FileName);
 

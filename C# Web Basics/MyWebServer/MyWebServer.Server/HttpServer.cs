@@ -1,12 +1,8 @@
 ﻿using MyWebServer.Server.HTTP;
 using MyWebServer.Server.Routing;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace MyWebServer.Server
 {
@@ -61,11 +57,6 @@ namespace MyWebServer.Server
                     var request = Request.Parse(requestText);
 
                     var response = this.routingTable.MatchRequest(request);
-
-                    if (response.PreRenderAction != null)
-                    {
-                        response.PreRenderAction(request, response);
-                    }
 
                     AddSession(request, response);
 

@@ -31,22 +31,21 @@ namespace MyWebServer.Demo.Comtrollers
         {
             Request.Session.Clear();
 
-            var bodyText = "";
-
             var usernameMatches = Request.Form["Username"] == Username;
             var passwordMatches = Request.Form["Password"] == Password;
 
             if (usernameMatches && passwordMatches)
             {
-                Request.Session[Session.SessionUserKey] = "MyUserId";
+                if (!this.Request.Session.ContainsKey(Session.SessionUserKey))
+                {
+                    this.Request.Session[Session.SessionUserKey] = "MyUserId";
 
-                CookieCollection cookies = new CookieCollection();
+                    var cookies = new CookieCollection();
 
-                cookies.Add(Session.SessionCookieName, Request.Session.Id);
+                    cookies.Add(Session.SessionCookieName, this.Request.Session.Id);
+                }
 
-                bodyText = "<h3>Logged successfully!</h3>";
-
-                return Html(bodyText, cookies);
+                return Html("<h3>Logged successfully!</h3>");
             }
 
             return Redirect("/Login");
