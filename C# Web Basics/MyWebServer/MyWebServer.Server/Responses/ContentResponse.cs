@@ -6,7 +6,7 @@ namespace MyWebServer.Server.Responses
 {
     public class ContentResponse : Response
     {
-        public ContentResponse(string content, string contentType) 
+        public ContentResponse(string content, string contentType)
             : base(StatusCode.OK)
         {
             Guard.AgainstNull(content);

@@ -39,7 +39,7 @@ namespace MyWebServer.Server
         {
             serverListener.Start();
 
-            Console.WriteLine($"Server started on port {port}");
+            Console.WriteLine($"Server started on port {port}.");
             Console.WriteLine("Listening for requests...");
 
             while (true)
@@ -67,7 +67,7 @@ namespace MyWebServer.Server
             }
         }
 
-        private void AddSession(Request request, Response response)
+        private static void AddSession(Request request, Response response)
         {
             var sessionExists=request.Session.ContainsKey(Session.SessionCurrentDateKey);
 

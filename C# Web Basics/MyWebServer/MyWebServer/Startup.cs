@@ -6,7 +6,7 @@ namespace MyWebServer.Demo
 {
     public class Startup
     {
-        static async Task Main(string[] args)
+        public static async Task Main(string[] args)
         {
             await new HttpServer(routes => routes
                 .MapGet<HomeController>("/", c => c.Index())
