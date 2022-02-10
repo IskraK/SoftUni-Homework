@@ -1,6 +1,8 @@
 ﻿using BasicWebServer.Demo.Models;
+using BasicWebServer.Server.Attributes;
 using BasicWebServer.Server.Controllers;
 using BasicWebServer.Server.HTTP;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web;
@@ -17,12 +19,16 @@ namespace BasicWebServer.Demo.Controllers
 
         }
 
+        [HttpGet]
         public Response Index() => Text("Hello from the server!");
+
+        public Response Student(string name, int age) => Text($"I'm {name} and I'm {age} years old");
 
         public Response Redirect() => Redirect("https://softuni.bg");
 
         public Response Html() => View();
 
+        [HttpPost]
         public Response HtmlFormPost()
         {
             string name = Request.Form["Name"];
@@ -32,6 +38,18 @@ namespace BasicWebServer.Demo.Controllers
             {
                 Name = name,
                 Age = int.Parse(age)
+            };
+
+            return View(model);
+        }
+
+        public Response Test()
+        {
+            var model = new List<FormViewModel>()
+            {
+                new(){ Age = 23, Name = "Pesho" },
+                new(){ Age = 24, Name = "Gosho" },
+                new(){ Age = 23, Name = "Misho" }
             };
 
             return View(model);
