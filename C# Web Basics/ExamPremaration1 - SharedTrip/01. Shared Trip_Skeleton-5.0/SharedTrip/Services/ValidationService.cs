@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SharedTrip.Services
+{
+    public class ValidationService : IValidationService
+    {
+       public (bool isValid, IEnumerable<string> errors) ValidateModel(object model)
+        {
+            var context = new ValidationContext(model);
+            var errorResult = new List<ValidationResult>();
+            var errors = new List<string>();
+
+            bool isValid = Validator.TryValidateObject(model, context, errorResult, true);
+
+            if (isValid)
+            {
+                return (isValid,null);
+            }
+
+            foreach (var error in errorResult)
+            {
+                errors.Add(error.ErrorMessage); 
+            }
+
+            return (isValid,errors);
+        }
+    }
+}
