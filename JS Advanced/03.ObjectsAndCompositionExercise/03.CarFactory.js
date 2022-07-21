@@ -21,7 +21,9 @@ function solve(objCar) {
     if (size % 2 == 0) {
         size--;
     }
-    let wheels = [size, size, size, size];
+
+    //let wheels = [size, size, size, size];
+    let wheels = Array(4).fill(size, 0, 4);
 
     const car = {
         model: objCar.model,
