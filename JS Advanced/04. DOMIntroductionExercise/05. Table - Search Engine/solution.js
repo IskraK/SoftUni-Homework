@@ -6,9 +6,11 @@ function solve() {
    function onClick() {
       for (let row of rows) {
          row.classList.remove('select');
+         // row.removeAttribute('class');
 
          if (search.value !== '' && row.innerHTML.includes(search.value)) {
             row.className = 'select';
+            // row.setAttribute('class', 'select');
          }
       }
 
