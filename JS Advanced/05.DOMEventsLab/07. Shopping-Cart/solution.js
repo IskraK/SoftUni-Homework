@@ -16,11 +16,15 @@ function solve() {
 
    document.querySelector('.checkout').addEventListener('click', () => {
       const result = cart.reduce((acc, curr) => {
-         acc.items.push(curr.name);
+         if (!acc.items.includes(curr.name)) {
+            acc.items.push(curr.name);
+         }
          acc.total += curr.price;
          return acc;
       }, { items: [], total: 0 });
 
       output.value += `You bought ${result.items.join(', ')} for ${result.total.toFixed(2)}.`;
+      
+      Array.from(document.querySelectorAll('button')).forEach(b => b.disabled = true);
    });
 }
