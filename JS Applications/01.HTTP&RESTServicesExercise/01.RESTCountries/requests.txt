@@ -1,0 +1,19 @@
+Requests in Postman:
+
+GET https://restcountries.com/v2/name/Bulgaria
+
+GET https://restcountries.com/v2/name/Italy?fields=name,capital,region,population
+
+GET https://restcountries.com/v2/lang/deu?fields=name,region
+
+
+HTTP :
+
+GET /v2/name/Bulgaria HTTP/1.1
+Host: restcountries.com
+
+GET /v2/name/Italy?fields=name,capital,region,population HTTP/1.1
+Host: restcountries.com
+
+GET /v2/lang/deu?fields=name,region HTTP/1.1
+Host: restcountries.com

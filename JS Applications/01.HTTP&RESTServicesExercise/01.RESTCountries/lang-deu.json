@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Austria",
+        "region": "Europe",
+        "independent": false
+    },
+    {
+        "name": "Belgium",
+        "region": "Europe",
+        "independent": false
+    },
+    {
+        "name": "Germany",
+        "region": "Europe",
+        "independent": false
+    },
+    {
+        "name": "Vatican City",
+        "region": "Europe",
+        "independent": false
+    },
+    {
+        "name": "Liechtenstein",
+        "region": "Europe",
+        "independent": false
+    },
+    {
+        "name": "Luxembourg",
+        "region": "Europe",
+        "independent": false
+    },
+    {
+        "name": "Switzerland",
+        "region": "Europe",
+        "independent": false
+    }
+]

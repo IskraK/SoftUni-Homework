@@ -1,0 +1,9 @@
+POST /jsonstore/phonebook HTTP/1.1
+Host: localhost:3030
+Content-Type: application/json
+Content-Length: 51
+
+{
+"person": "User",
+"phone": "+359888123456"
+}

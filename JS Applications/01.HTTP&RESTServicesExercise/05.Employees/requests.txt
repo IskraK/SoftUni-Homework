@@ -1,0 +1,41 @@
+//Create new employee
+//	https://dummy.restapiexample.com/api/v1/create
+
+POST /api/v1/create HTTP/1.1
+Host: dummy.restapiexample.com
+Content-Type: application/json
+Cookie: ezCMPCCS=false
+Content-Length: 165
+
+{
+    "employee_name": "Test Employee",
+    "employee_salary": 123000,
+    "employee_age": 40,
+    "profile_image": ""
+}
+
+
+//Update an employee record
+//https://dummy.restapiexample.com/api/v1/update/15
+
+PUT /api/v1/update/15 HTTP/1.1
+Host: dummy.restapiexample.com
+Content-Type: application/json
+Cookie: ezCMPCCS=false
+Content-Length: 146
+
+{
+    "id": 15,
+    "employee_name": "Tatyana Fitzpatrick",
+    "employee_salary": 400750,
+    "employee_age": 20,
+    "profile_image": ""
+}
+
+
+//Delete employee
+//https://dummy.restapiexample.com/api/v1/delete/2
+
+DELETE /api/v1/delete/2 HTTP/1.1
+Host: dummy.restapiexample.com
+Cookie: ezCMPCCS=false

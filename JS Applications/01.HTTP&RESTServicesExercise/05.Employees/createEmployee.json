@@ -1,0 +1,11 @@
+{
+    "status": "success",
+    "data": {
+        "employee_name": "Test Employee",
+        "employee_salary": 123000,
+        "employee_age": 40,
+        "profile_image": null,
+        "id": 4752
+    },
+    "message": "Successfully! Record has been added."
+}

@@ -1,0 +1,14 @@
+GET /jsonstore/bus/businfo/ HTTP/1.1
+Host: localhost:3030
+
+
+GET /jsonstore/bus/businfo/1287 HTTP/1.1
+Host: localhost:3030
+
+
+GET /jsonstore/bus/businfo/1308 HTTP/1.1
+Host: localhost:3030
+
+
+GET /jsonstore/bus/businfo/2334 HTTP/1.1
+Host: localhost:3030
