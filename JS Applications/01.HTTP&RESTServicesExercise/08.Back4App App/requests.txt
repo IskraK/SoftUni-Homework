@@ -1,0 +1,55 @@
+//Get all students
+//https://parseapi.back4app.com/classes/Student
+
+GET /classes/Student HTTP/1.1
+Host: parseapi.back4app.com
+X-Parse-Application-Id: xCXQVGEDK4f9hBqesQlEzq7IApqumXsRvbo1ap6H
+X-Parse-REST-API-Key: v0R7IdxJpyorxNWeCrHuCoVovZJqyaT2y8aOxg1q
+
+
+//Get one students
+//https://parseapi.back4app.com/classes/Student/4d5Ewv97Ph
+
+GET /classes/Student/4d5Ewv97Ph HTTP/1.1
+Host: parseapi.back4app.com
+X-Parse-Application-Id: xCXQVGEDK4f9hBqesQlEzq7IApqumXsRvbo1ap6H
+X-Parse-REST-API-Key: v0R7IdxJpyorxNWeCrHuCoVovZJqyaT2y8aOxg1q
+
+
+//Add new students
+
+POST /classes/Student HTTP/1.1
+Host: parseapi.back4app.com
+X-Parse-Application-Id: xCXQVGEDK4f9hBqesQlEzq7IApqumXsRvbo1ap6H
+X-Parse-REST-API-Key: v0R7IdxJpyorxNWeCrHuCoVovZJqyaT2y8aOxg1q
+Content-Type: application/json
+Content-Length: 82
+
+{
+    "firstName": "New",
+    "lastName": "Student",
+    "averageGrade": 4.5
+}
+
+//Edit existing student
+
+PUT /classes/Student/bOMf4GreWZ HTTP/1.1
+Host: parseapi.back4app.com
+X-Parse-Application-Id: xCXQVGEDK4f9hBqesQlEzq7IApqumXsRvbo1ap6H
+X-Parse-REST-API-Key: v0R7IdxJpyorxNWeCrHuCoVovZJqyaT2y8aOxg1q
+Content-Type: application/json
+Content-Length: 89
+
+{
+    "firstName": "NewStudent",
+    "lastName": "Student",
+    "averageGrade": 4.5
+}
+
+
+//Delete student
+
+DELETE /classes/Student/bOMf4GreWZ HTTP/1.1
+Host: parseapi.back4app.com
+X-Parse-Application-Id: xCXQVGEDK4f9hBqesQlEzq7IApqumXsRvbo1ap6H
+X-Parse-REST-API-Key: v0R7IdxJpyorxNWeCrHuCoVovZJqyaT2y8aOxg1q

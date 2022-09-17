@@ -1,0 +1,37 @@
+{
+    "books": {
+        "nonFiction": [
+            null,
+            {
+                "author": "Jennie Allen",
+                "title": "Get Out of Your Head: Stopping the Spiral of Toxic Thoughts"
+            },
+            {
+                "author": "Pete Buttigieg",
+                "title": "Trust: America’s Best Chance"
+            },
+            {
+                "author": "Paul Kalanithi",
+                "title": "When Breath Becomes Air"
+            }
+        ],
+        "romance": [
+            null,
+            {
+                "author": "Colleen Hoover",
+                "title": "It Ends With Us"
+            },
+            {
+                "author": "Jasmine Guillory",
+                "title": "The Proposal"
+            }
+        ],
+        "thriller": [
+            null,
+            {
+                "author": "Gillian Flynn",
+                "title": "Gone Girl"
+            }
+        ]
+    }
+}

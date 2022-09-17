@@ -1,0 +1,29 @@
+[
+	{
+		"Singer": "Eminem",
+		"created": 1663429812459,
+		"___class": "musicCollection",
+		"Title": "Cinderella Man",
+		"ownerId": "0B3BDA9D-8B71-4F0F-9C74-1133337A6045",
+		"updated": 1663429855332,
+		"objectId": "15D8427F-8188-4211-9DF3-508176287D0A"
+	},
+	{
+		"Singer": "Dove Cameron",
+		"created": 1663429916669,
+		"___class": "musicCollection",
+		"Title": "We Belong",
+		"ownerId": "0B3BDA9D-8B71-4F0F-9C74-1133337A6045",
+		"updated": 1663429936110,
+		"objectId": "54863DBB-37B1-4B4D-9A7A-F206ADE253E4"
+	},
+	{
+		"Singer": "Alan Walker",
+		"created": 1663429864052,
+		"___class": "musicCollection",
+		"Title": "Faded",
+		"ownerId": "0B3BDA9D-8B71-4F0F-9C74-1133337A6045",
+		"updated": 1663429894745,
+		"objectId": "D6EAD9DA-3649-41AB-88BF-1A5B43B1AC65"
+	}
+]

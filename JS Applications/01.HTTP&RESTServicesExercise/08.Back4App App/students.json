@@ -1,0 +1,44 @@
+{
+    "results": [
+        {
+            "objectId": "4d5Ewv97Ph",
+            "firstName": "James",
+            "lastName": "Christopher",
+            "averageGrade": 5.7,
+            "createdAt": "2022-09-17T11:52:56.186Z",
+            "updatedAt": "2022-09-17T11:52:56.186Z"
+        },
+        {
+            "objectId": "H55Owkufms",
+            "firstName": "Barbara",
+            "lastName": "Smith",
+            "averageGrade": 4.9,
+            "createdAt": "2022-09-17T11:53:39.515Z",
+            "updatedAt": "2022-09-17T11:53:39.515Z"
+        },
+        {
+            "objectId": "HuzNuM7Y1R",
+            "firstName": "Sarah",
+            "lastName": "Johnson",
+            "averageGrade": 5.9,
+            "createdAt": "2022-09-17T11:54:14.256Z",
+            "updatedAt": "2022-09-17T11:54:14.256Z"
+        },
+        {
+            "objectId": "GZL0MOhvyn",
+            "firstName": "William",
+            "lastName": "Miller",
+            "averageGrade": 3.3,
+            "createdAt": "2022-09-17T11:54:53.324Z",
+            "updatedAt": "2022-09-17T11:54:53.324Z"
+        },
+        {
+            "objectId": "RYIdHrgL0f",
+            "firstName": "Matthew",
+            "lastName": "Taylor",
+            "averageGrade": 4.1,
+            "createdAt": "2022-09-17T11:55:28.686Z",
+            "updatedAt": "2022-09-17T11:55:28.686Z"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+//Get all books
+//https://books-c6303-default-rtdb.europe-west1.firebasedatabase.app/.json
+
+GET /.json HTTP/1.1
+Host: books-c6303-default-rtdb.europe-west1.firebasedatabase.app
+
+
+//Get book
+//https://books-c6303-default-rtdb.europe-west1.firebasedatabase.app/books/romance/1.json
+
+GET /books/romance/1.json HTTP/1.1
+Host: books-c6303-default-rtdb.europe-west1.firebasedatabase.app
+
+
+//Add book
+
+POST /books/thriller/.json HTTP/1.1
+Host: books-c6303-default-rtdb.europe-west1.firebasedatabase.app
+Content-Type: application/json
+Content-Length: 56
+
+{
+    "author": "Unknown",
+    "title": "Something"
+}
+
+
+//Edit book by ID
+
+PUT /books/thriller/-NCBhRgfRxsE4E2y2Osm.json HTTP/1.1
+Host: books-c6303-default-rtdb.europe-west1.firebasedatabase.app
+Content-Type: application/json
+Content-Length: 63
+
+{
+    "author": "Unknown Author",
+    "title": "Something"
+}
+
+
+//Delete book by ID
+//https://books-c6303-default-rtdb.europe-west1.firebasedatabase.app/books/thriller/-NCBjcFFp9-0R6j30w1C.json
+
+DELETE /books/thriller/-NCBjcFFp9-0R6j30w1C.json HTTP/1.1
+Host: books-c6303-default-rtdb.europe-west1.firebasedatabase.app
