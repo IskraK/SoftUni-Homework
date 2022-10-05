@@ -136,23 +136,3 @@ async function deleteMovie(ev, movieId) {
         }
     }
 }
-
-// async function editMovie(ev, movieId) {
-//     ev.preventDefault();
-//     const user = JSON.parse(localStorage.getItem('user'));
-//     const formData = new FormData(ev.target);
-//     const title = formData.get('title');
-//     const description = formData.get('description');
-//     const img = formData.get('imageUrl');
-
-//     await fetch('http://localhost:3030/data/movies/' + movieId, {
-//         method: 'PUT',
-//         headers: {
-//             'Content-Type': 'application/json',
-//             'X-Authorization': user.accessToken
-//         },
-//         body: JSON.stringify({ title, description, img })
-//     });
-
-//     detailsPage(movieId);
-// }
