@@ -1,0 +1,20 @@
+{
+  "name": "05.ArchitectureAndTestingLab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.26.1",
+    "playwright-chromium": "^1.26.1"
+  }
+}
