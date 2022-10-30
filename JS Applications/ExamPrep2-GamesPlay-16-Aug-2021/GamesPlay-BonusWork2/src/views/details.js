@@ -1,10 +1,12 @@
 import { html, nothing } from '../../node_modules/lit-html/lit-html.js';
 import * as requestService from '../services/requestService.js';
 import * as userService from '../services/userService.js';
+import { commentFormView } from './commentForm.js';
+import { commentsView } from './comments.js';
 
 
 
-const detailsTemplate = (game, user, isOwner, onDelete) => html`
+const detailsTemplate = (game, isOwner, commentsSection, commentFormSection, onDelete) => html`
 <section id="game-details">
     <h1>Game Details</h1>
     <div class="info-section">
@@ -19,7 +21,7 @@ const detailsTemplate = (game, user, isOwner, onDelete) => html`
         <p class="text">${game.summary}</p>
 
         <!-- Bonus ( for Guests and Users ) -->
-
+        ${commentsSection}
 
         <!-- Edit/Delete buttons ( Only for creator of this game )  -->
         ${isOwner
@@ -34,16 +36,20 @@ const detailsTemplate = (game, user, isOwner, onDelete) => html`
 
     <!-- Bonus -->
     <!-- Add Comment ( Only for logged-in users, which is not creators of the current game ) -->
-
+    ${commentFormSection}
 </section>`;
 
 export async function detailsView(ctx) {
     const gameId = ctx.params.id;
+    const [game, commentsSection] = await Promise.all([
+        requestService.getById(gameId),
+        commentsView(gameId)
+    ]);
     const user = userService.getUser();
-    const game = await requestService.getById(gameId);
     const isOwner = user && user._id === game._ownerId;
+    const commentFormSection = commentFormView(ctx, isOwner);
 
-    ctx.render(detailsTemplate(game, user, isOwner, onDelete));
+    ctx.render(detailsTemplate(game, isOwner, commentsSection, commentFormSection, onDelete));
 
     async function onDelete() {
         const confirmed = confirm('Are you sure you want to delete this game?');

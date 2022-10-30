@@ -48,13 +48,19 @@ export async function deleteById(id) {
     return request.del(`${baseUrl}/data/games/${id}`);
 }
 
-export async function getCommentsById(gameId) {
+export const getCommentsById = (gameId) =>
     request.get(`${baseUrl}/data/comments?where=gameId%3D%22${gameId}%22`);
-}
 
-export async function addComment(comment) {
+export const addComment = (comment) =>
     request.post(`${baseUrl}/data/comments`, comment);
-}
+
+// export async function getCommentsById(gameId) {
+//     request.get(`${baseUrl}/data/comments?where=gameId%3D%22${gameId}%22`);
+// }
+
+// export async function addComment(comment) {
+//     request.post(`${baseUrl}/data/comments`, comment);
+// }
 
 // export const getRecent = () => request.get(`${baseUrl}/data/games?sortBy=_createdOn%20desc&distinct=category`);
 
@@ -71,9 +77,3 @@ export async function addComment(comment) {
 // export const logout = () =>
 //     request.get(`${url}/logout`)
 //         .then(() => userService.removeUser());
-
-// export const getCommentsForGame = (gameId) =>
-//     request.get(`${baseUrl}/data/comments?where=gameId%3D%22${gameId}%22`);
-
-// export const addNewComment = (gameId, comment) =>
-//     request.post(`${baseUrl}/data/comments`, { gameId, comment });

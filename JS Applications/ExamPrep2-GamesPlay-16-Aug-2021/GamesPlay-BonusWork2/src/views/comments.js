@@ -23,6 +23,5 @@ const commentTemplate = (comment) => html`
 
 export async function commentsView(gameId) {
     const comments = await requestService.getCommentsById(gameId);
-    console.log(comments); //comments -> undefined
     return commentsTemplate(comments);
 }

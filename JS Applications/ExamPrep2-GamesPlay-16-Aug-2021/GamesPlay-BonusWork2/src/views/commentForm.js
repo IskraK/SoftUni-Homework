@@ -18,20 +18,18 @@ export function commentFormView(ctx, isOwner) {
         return nothing;
     }
 
-    
-}
+    async function onSubmit(ev) {
+        ev.preventDefault();
 
-async function onSubmit(ev, ctx) {
-    ev.preventDefault();
+        const gameId = ctx.params.id;
+        const data = Object.fromEntries(new FormData(ev.currentTarget));
 
-    const gameId = ctx.params.id;
-    const data = Object.fromEntries(new FormData(ev.currentTarget));
-
-    await requestService.addComment({
-        gameId,
-        comment: data.comment
-    });
-    console.log(data);
-    ev.target.reset();
-    ctx.page.redirect(`/details/${gameId}`);
+        await requestService.addComment({
+            gameId,
+            comment: data.comment
+        });
+        console.log(data);
+        ev.target.reset();
+        ctx.page.redirect(`/details/${gameId}`);
+    }
 }
