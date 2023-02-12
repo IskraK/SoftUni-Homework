@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace _03.SumOfCoins
+﻿namespace _03.SumOfCoins
 {
     internal class Program
     {

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace _04.SetCover
+﻿namespace _04.SetCover
 {
     internal class Program
     {
